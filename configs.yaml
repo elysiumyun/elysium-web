@@ -1,0 +1,27 @@
+# App
+addr: 0.0.0.0
+port: 2333
+
+# System
+logdir: ./app/logs
+datadir: ./app/data
+timezone: Asia/Shanghai
+
+## Mysql
+mysql:
+  addr: 175.178.84.110
+  port: 3306
+  user: root
+  passwd: 12345678
+  database: app
+  options: charset=utf8mb4&parseTime=true&loc=Local&timeout=15s
+  MaxOpenConns: 0
+  MaxIdleConns: 100
+  ConnMaxIdleTime: 3m
+  ConnMaxLifetime: 6m
+
+## Redis
+redis:
+  addrs: [175.178.84.110:6379]
+  passwd: 12345678
+  mastername:
